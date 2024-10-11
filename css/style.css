@@ -1,0 +1,13 @@
+:root {
+  --light-white: #F3F3F3;
+  --light-gray: #79858C;
+  --button-color: #2183D5;
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
