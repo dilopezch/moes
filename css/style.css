@@ -11,3 +11,39 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+  font-family: var(--main-font);
+}
+
+header {
+  width: 100%;
+  min-width: 360px;
+  height: 60px;
+  background-color: var(--light-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav img {
+  margin: 20px;
+  width: 40px;
+}
+
+header a{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+header a img {
+  width: 80px;
+}
+
+
+
+
+
