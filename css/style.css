@@ -20,30 +20,49 @@ html {
 header {
   width: 100%;
   min-width: 360px;
-  height: 60px;
+  height: 6rem;
   background-color: var(--light-white);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: relative;
+  justify-content: space-between;
+  padding: 2rem;
 }
 
-nav img {
-  margin: 20px;
-  width: 40px;
+.logo {
+  width: 8rem;
 }
 
-header a{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 5rem;
 }
 
-header a img {
-  width: 80px;
+.nav-list li a {
+  text-decoration: none;
+  color: #79858C;
 }
 
+.abrir-menu {
+  display: none;
+}
 
+@media screen and (max-width: 500px){
+  
+  /*.abrir-menu {
+    display: block;
+  }
 
+  nav {
+    display: none;
+  }*/
 
+  nav {
+    position: absolute;
+  }
 
+  .nav-list {
+    flex-direction: column;
+  }
+    
+}
