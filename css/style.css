@@ -19,16 +19,16 @@ html {
 
 header {
   width: 100%;
-  height: 6rem;
+  height: 10rem;
   background-color: var(--light-white);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 2rem 7rem;
 }
 
 .logo {
-  width: 8rem;
+  height: 5rem;
 }
 
 .nav-list {
@@ -40,6 +40,8 @@ header {
 .nav-list li a {
   text-decoration: none;
   color: #79858C;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .abrir-menu, 
@@ -47,8 +49,13 @@ header {
   display: none;
 }
 
+.intro-video {
+  width: 100%;
+  height: auto;
+}
 
-@media screen and (max-width: 550px){
+
+@media screen and (max-width: 768px){
   
   .abrir-menu, 
   .cerrar-menu{
