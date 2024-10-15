@@ -54,6 +54,61 @@ header {
   height: auto;
 }
 
+.productos h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  padding-top: 8rem;
+}
+
+.menu-productos{
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.menu-productos a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: black;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+}
+
+  .card-producto {
+    background-color: var(--light-white);
+    border-radius: 10px;
+    text-align: center;
+    padding: 3rem 5rem;
+    margin: 7rem 12rem;
+
+  }
+
+  .card-producto img {
+    height: 30rem;
+    margin: 1rem;
+  }
+
+  .card-producto h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .card-producto button {
+    margin: 1rem 0 2rem 0;
+    border: 0;
+    background-color: var(--button-color);
+    font-family: var(--secondary-font);
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #F3F3F3;
+    border-radius: 60px;
+  }
 
 @media screen and (max-width: 768px){
   

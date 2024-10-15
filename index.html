@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_outward" />
   <link rel="stylesheet" href="css/style.css">
   <title>Moes Smart Home</title>
 
 </head>
+
 <body>
 
   <header>
@@ -33,19 +38,36 @@
   <main>
 
     <section> <!-- video intro -->
-      <video class="intro-video"  muted loop playsinline> <!-- autoplay -->
+      <video class="intro-video" muted loop playsinline> <!-- autoplay -->
         <source src="./assets/video/moes-intro.mp4">
         <p>Tu navegador no admite la etiqueta de video.</p>
       </video>
     </section>
 
+    <section class="productos"> <!-- Productos -->
+      <h1>Nuestros Productos</h1>
+      <div class="menu-productos">
+        <a href="">Mas populares</a> / <a href="">Nuevos</a>
+      </div>
 
+      <div class="grid-productos">
+        <div class="card-producto">
+          <img src="./assets/img/smart-bulb.png" alt="">
+          <h2>Bombilla Smart LED</h2>
+          <button type="button"> Mas información 
+            <span class="material-symbols-outlined">arrow_outward</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
 
   </main>
 
   <script src="./js/main.js"></script>
 
 </body>
+
 </html>
 
 <!-- 
