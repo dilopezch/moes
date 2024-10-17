@@ -2,6 +2,7 @@
   --light-white: #F3F3F3;
   --light-gray: #79858C;
   --button-color: #2183D5;
+  --very-dark: #0D0D0D;
   --main-font: "Montserrat", sans-serif;
   --secondary-font: "Open Sans", sans-serif;
 }
@@ -31,6 +32,7 @@ header {
   height: 5rem;
 }
 
+
 /*Barra de navegación*/
 .nav-list {
   list-style-type: none;
@@ -49,6 +51,7 @@ header {
 .cerrar-menu{
   display: none;
 }
+
 
 /*Video*/
 .intro-video {
@@ -73,6 +76,7 @@ header {
   font-size: 1.8rem;
   color: black;
 }
+
 
 /*Productos*/
 .grid-productos {
@@ -114,6 +118,8 @@ header {
   margin: 2rem auto;
 }
 
+
+/*Info categorías*/
 .categorias {
   background-color: var(--light-gray);
   text-align: center;
@@ -145,6 +151,8 @@ header {
   margin: 3rem 0;
 }
 
+
+/*Imágenes categorías*/
 .grid-categorias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -163,6 +171,81 @@ header {
 .grid-categorias div img {
   height: 100%;
 }
+
+
+/*Envíos*/
+.section-envios-info {
+  display: flex;
+  justify-content: center;
+  margin: 10rem 12.2rem;
+}
+
+.envios-info {
+  margin: 0 10rem;
+  display: flex;
+  align-items: center;
+  color: var(--light-gray);
+
+}
+
+.envios-info .material-icons {
+  font-size: 4rem;
+  margin-right: 0.5rem;
+}
+
+.envios-info span:nth-child(2) {
+  font-size: 1.8rem;
+}
+
+
+/*Footer*/
+footer {
+  background-color: var(--light-gray);
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+
+.contactenos {
+  color: var(--light-white);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.contactenos span {
+  margin: 0.5rem;
+}
+
+.contactenos span:nth-child(1) {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.descarga {
+  color: var(--light-white);
+  text-align: center;
+
+}
+
+.descarga span {
+  font-size: 2.5rem;
+
+}
+
+.descarga-img {
+  margin-top: 2rem;
+}
+
+.descarga-img img {
+  width: 17rem;
+}
+
+
 
 @media screen and (max-width: 768px){
   
