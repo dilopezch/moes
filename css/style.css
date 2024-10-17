@@ -145,6 +145,25 @@ header {
   margin: 3rem 0;
 }
 
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.grid-categorias div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.grid-categorias div img {
+  height: 100%;
+}
+
 @media screen and (max-width: 768px){
   
   .abrir-menu, 
