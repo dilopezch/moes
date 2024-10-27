@@ -221,6 +221,10 @@ footer {
   font-size: 1.8rem;
 }
 
+.social-media-icons {
+  visibility: hidden;
+}
+
 .contactenos span:nth-child(1) {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -393,5 +397,20 @@ footer {
   .contactenos span {
     margin: 0.5rem;
     font-size: 1.4rem;
+  }
+
+  .social-media-icons img {
+    visibility: visible;
+    width: 4rem;
+    margin: 0 1.5rem;
+  }
+
+  .descarga span {
+    font-size: 2.2rem;
+  }
+
+  .descarga-img img {
+    width: 15rem;
+    margin: 0 1rem;
   }
 }
