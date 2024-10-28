@@ -64,6 +64,7 @@ header {
   font-size: 3rem;
   font-weight: 500;
   padding-top: 8rem;
+  color: var(--very-dark);
 }
 
 .menu-productos{
@@ -74,7 +75,7 @@ header {
 .menu-productos a {
   text-decoration: none;
   font-size: 1.8rem;
-  color: black;
+  color: var(--very-dark);
 }
 
 
@@ -412,5 +413,86 @@ footer {
   .descarga-img img {
     width: 15rem;
     margin: 0 1rem;
+  }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+  /*Barra de navegación*/
+  header {
+    width: 100%;
+    height: 10rem;
+    padding: 3rem;
+  }
+
+  .productos h1 {
+    font-size: 4rem;
+  }
+
+  .menu-productos a {
+    font-size: 2rem;
+  }
+
+      /*Productos*/
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    padding: 5rem;
+  }
+
+  /*Info categorías*/
+  .categorias {
+    margin: 3rem 0;
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  .categorias div {
+    margin: 3rem 0;
+  }
+
+  .categorias div a {
+    font-size: 2.2rem;
+  }
+
+  .categorias img {
+    width: 90%;
+  }
+
+  .categorias p {
+    font-size: 1.8rem;
+    margin: 3rem 0;
+  }
+
+  /*Imágenes categorías*/
+  .grid-categorias div img {
+    width: 200%;
+  }
+
+  .section-envios-info {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 5rem 0 ;
+  }
+
+  .envios-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .envios-info .material-icons {
+    font-size: 4.5rem;
+    margin-right: 1rem;
+  }
+
+  .envios-info span:nth-child(2) {
+    font-size: 2.5rem;
   }
 }
