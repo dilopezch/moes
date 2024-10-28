@@ -124,7 +124,7 @@ header {
 .categorias {
   background-color: var(--light-gray);
   text-align: center;
-  margin: 8rem;
+  margin: 20rem;
   padding: 2rem 8rem;
   border-radius: 10px;
   /*overflow: hidden;*/
@@ -133,21 +133,22 @@ header {
 .categorias div {
   font-size: 1.8rem;
   color: var(--light-white);
-  margin: 3rem;
+  margin: 6rem 3rem;
 }
 
 .categorias div a {
   text-decoration: none;
   color: var(--light-white);
-  font-size: 1.8rem;
+  font-size: 2.8rem;
+  font-weight: 400;
 }
 
 .categorias img {
-  width: 100%;
+  width: 90%;
 }
 
 .categorias p {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: var(--light-white);
   margin: 3rem 0;
 }
@@ -178,11 +179,11 @@ header {
 .section-envios-info {
   display: flex;
   justify-content: center;
-  margin: 10rem 12.2rem;
+  padding: 10rem 5rem ;
 }
 
 .envios-info {
-  margin: 0 10rem;
+  margin: 5rem;
   display: flex;
   align-items: center;
   color: var(--light-gray);
@@ -190,12 +191,12 @@ header {
 }
 
 .envios-info .material-icons {
-  font-size: 4rem;
+  font-size: 6rem;
   margin-right: 0.5rem;
 }
 
 .envios-info span:nth-child(2) {
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 
@@ -252,8 +253,7 @@ footer {
 
 
 
-@media screen and (max-width: 425px){
-
+@media screen and (max-width: 431px){
 
   /*Barra de navegación*/
   header {
@@ -417,7 +417,7 @@ footer {
 
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 432px) and (max-width: 768px) {
 
   /*Barra de navegación*/
   header {
@@ -434,7 +434,7 @@ footer {
     font-size: 2rem;
   }
 
-      /*Productos*/
+  /*Productos*/
   .grid-productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -495,4 +495,71 @@ footer {
   .envios-info span:nth-child(2) {
     font-size: 2.5rem;
   }
+
+    /*Footer*/
+    footer {
+      height: 40rem;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .categorias {
+    padding: 1rem;
+    margin: 2rem 0 4rem 0;
+    border-radius: 0;
+  }
+
+  /*Envíos*/
+  .section-envios-info {
+    padding: 8rem 2rem ;
+  }
+
+  .envios-info {
+    margin: 3rem;
+  }
+
+  .envios-info .material-icons {
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+  
+  .envios-info span:nth-child(2) {
+    font-size: 2rem;
+  }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1443px) {
+
+  .grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+    padding: 8rem;
+  }
+
+  /*Envíos*/
+  .section-envios-info {
+    padding: 8rem 2rem ;
+  }
+
+  .envios-info {
+    margin: 3rem;
+  }
+
+  .envios-info .material-icons {
+    font-size: 4rem;
+    margin-right: 1rem;
+  }
+  
+  .envios-info span:nth-child(2) {
+    font-size: 2rem;
+  }
+
+
 }
