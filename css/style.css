@@ -270,7 +270,7 @@ footer {
   font-size: 1.8rem;
 }
 
-.social-media-icons {
+.footer-social-media a{
   visibility: hidden;
 }
 
@@ -463,10 +463,12 @@ footer {
     font-size: 1.4rem;
   }
 
-  .social-media-icons img {
-    visibility: visible;
-    width: 4rem;
+  .footer-social-media a{
+    font-size: 4rem;
+    color: var(--light-white);
+    text-decoration: none;
     margin: 0 1.5rem;
+    visibility: visible;
   }
 
   .descarga span {
