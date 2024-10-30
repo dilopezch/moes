@@ -52,6 +52,54 @@ header {
   display: none;
 }
 
+/*Social media side bar*/
+
+.social-media {
+  position: absolute;
+}
+
+.mf-social-side-list {
+  position: fixed;
+  top: 30vh;
+  right: 1rem;
+  z-index: 100;
+}
+
+.mf-social-side-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin:0
+}
+
+.mf-social-side-list ul li a {
+  color: var(--light-white);
+  background-color: var(--button-color);
+  border-radius: 10%;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4.5rem;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.mf-social-side-list ul li a:hover {
+  opacity: .9;
+  -webkit-transform: translateY(-3px);
+  transform: translateY(-3px);
+}
+
+.mf-social-side-list ul li a i {
+  font-size: 2rem;
+
+}
+
 
 /*Video*/
 .intro-video {
@@ -85,7 +133,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 2rem;
-  padding: 12.2rem; /*TODO: Organizar el padding en la versión de celular*/
+  padding: 12.2rem;
 }
 
 .card-producto {
