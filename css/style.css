@@ -28,6 +28,10 @@ header {
   padding: 2rem 7rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   height: 5rem;
 }
@@ -41,7 +45,6 @@ header {
 }
 
 .nav-list li a {
-  text-decoration: none;
   color: var(--light-gray);
   font-size: 2rem;
   font-weight: 400;
@@ -82,7 +85,6 @@ header {
   line-height: 4.5rem;
   margin-top: 5px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
@@ -120,7 +122,6 @@ header {
 }
 
 .menu-productos a {
-  text-decoration: none;
   font-size: 1.8rem;
   color: var(--very-dark);
 }
@@ -142,6 +143,7 @@ header {
   width: 100%;
   padding: 3rem;
   justify-self: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .card-producto img {
@@ -185,7 +187,6 @@ header {
 }
 
 .categorias div a {
-  text-decoration: none;
   color: var(--light-white);
   font-size: 2.8rem;
   font-weight: 400;
@@ -491,7 +492,6 @@ footer {
   .footer-social-media a{
     font-size: 4rem;
     color: var(--light-white);
-    text-decoration: none;
     margin: 0 1.5rem;
     visibility: visible;
   }
