@@ -1,0 +1,46 @@
+:root {
+  --light-white: #F3F3F3;
+  --light-gray: #79858C;
+  --very-dark: #0D0D0D;
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+font-size: 62.5%;
+font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--light-white);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10%;
+}
+
+main img {
+  width: 30%;
+}
+
+main span {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+main a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #25D366;
+  margin-top: 1rem;
+}
