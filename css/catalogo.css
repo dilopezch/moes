@@ -29,6 +29,9 @@ main {
   padding-top: 10%;
 }
 
+a {
+}
+
 main img {
   width: 30%;
 }
@@ -38,9 +41,16 @@ main span {
   text-align: center;
 }
 
-main a {
+main .whatsapp-icon{
   font-size: 3rem;
   text-decoration: none;
   color: #25D366;
   margin-top: 1rem;
+}
+
+main .backto {
+  margin: 2rem;
+  color: var(--very-dark);
+  font-size: 2rem;
+  text-align: center;
 }
