@@ -299,8 +299,20 @@ footer {
 }
 
 .contactenos span {
-  margin: 0.5rem;
+  margin: 0.8rem;
   font-size: 1.8rem;
+}
+
+.contactenos span a{
+  color: var(--light-white);
+}
+
+.contactenos i {
+  margin-right: 0.8rem;
+}
+
+.contactenos span:hover {
+
 }
 
 .footer-social-media a{
