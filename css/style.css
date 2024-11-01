@@ -111,9 +111,11 @@ a {
   z-index: -10;
 }
 
+
+/*Titulo productos*/
 .productos h1{
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 500;
   padding-top: 8rem;
   color: var(--very-dark);
@@ -122,10 +124,11 @@ a {
 .menu-productos{
   text-align: center;
   padding-top: 1rem;
+  font-size: 2rem;
 }
 
 .menu-productos a {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--very-dark);
 }
 
@@ -182,8 +185,8 @@ a {
 .categorias {
   background-color: var(--light-gray);
   text-align: center;
-  margin: 20rem;
-  padding: 2rem 8rem;
+  margin: 5rem 4rem;
+  padding: 1rem 10rem;
   border-radius: 10px;
   /*overflow: hidden;*/
 }
@@ -191,7 +194,7 @@ a {
 .categorias div {
   font-size: 1.8rem;
   color: var(--light-white);
-  margin: 6rem 3rem;
+  margin: 6rem 0 4rem 0;
 }
 
 .categorias div a {
@@ -201,18 +204,21 @@ a {
 }
 
 .categorias img {
-  width: 90%;
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
 }
 
 .categorias p {
-  font-size: 2.5rem;
+  text-align: center;
+  font-size: 2rem;
   color: var(--light-white);
-  margin: 3rem 0;
+  margin: 3rem auto;
 }
 
 
 /*Imágenes categorías*/
-
 .grid-categoria-img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -425,6 +431,10 @@ footer {
     padding-top: 6rem;
   }
 
+  .menu-productos {
+    font-size: 1.5rem;
+  }
+
   .menu-productos a {
     font-size: 1.5rem;
   }
@@ -536,13 +546,6 @@ footer {
     padding: 3rem;
   }
 
-  .productos h1 {
-    font-size: 4rem;
-  }
-
-  .menu-productos a {
-    font-size: 2rem;
-  }
 
   /*Productos*/
   .grid-productos {
@@ -574,14 +577,12 @@ footer {
   }
 
   .categorias p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 3rem 0;
   }
 
-  /*Imágenes categorías*/
 
-
-
+  /*Envíos*/
   .section-envios-info {
     display: flex;
     flex-direction: column;
@@ -622,6 +623,22 @@ footer {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
+    /*Titulo productos*/
+  .productos h1{
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .menu-productos{
+    font-size: 1.8rem;
+  }
+
+  .menu-productos a {
+    font-size: 1.8rem;
+    color: var(--very-dark);
+  }
+
+
   /*Productos*/
   .grid-productos {
     display: grid;
@@ -635,6 +652,24 @@ footer {
     padding: 1rem;
     margin: 2rem 0 4rem 0;
     border-radius: 0;
+  }
+  
+  /*Info categorías*/
+  .categorias {
+    margin: 5rem 4rem;
+    padding: 1rem 10rem;
+    border-radius: 10px;
+    /*overflow: hidden;*/
+  }
+
+  .categorias div {
+    font-size: 2.5rem;
+    margin: 4rem 2rem;
+  }
+
+  .categorias div a {
+    font-size: 2.5rem;
+    font-weight: 400;
   }
 
   /*Envíos*/
