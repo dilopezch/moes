@@ -144,19 +144,24 @@ a {
   border-radius: 10px;
   text-align: center;
   width: 100%;
-  padding: 3rem;
+  padding: 0;
   justify-self: center;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .card-producto img {
-  width: 60%;
+  width: 100%;
 }
 
 .card-producto h2 {
   margin: 1rem;
   font-size: 2rem;
   font-weight: 600;
+}
+
+.card-producto h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .info-btn {
@@ -229,11 +234,11 @@ a {
 }
 
 .grid-categoria-img div:nth-child(1) {
-  background-image: url("../assets/img/smart-light.png");
+  background-image: url("../assets/img/smart-light-group.jpg");
 }
 
 .grid-categoria-img div:nth-child(2) {
-  background-image: url("../assets/img/smart-lock.png");
+  background-image: url("../assets/img/smart-lock-group.jpg");
 }
 
 .grid-categoria-img div h2 {
