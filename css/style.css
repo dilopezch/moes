@@ -593,13 +593,9 @@ footer {
     font-size: 2.2rem;
   }
 
-  .categorias img {
-    width: 90%;
-  }
-
   .categorias p {
     font-size: 1.5rem;
-    margin: 3rem 0;
+    margin: 3rem;
   }
 
 
