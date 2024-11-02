@@ -354,6 +354,27 @@ footer {
   width: 17rem;
 }
 
+.footer-personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--light-gray);
+  color: var(--light-white);
+}
+
+.footer-personal-info span {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.footer-personal-info a{
+  color: var(--light-white);
+  font-size: 1.8rem;
+  margin: 0.5rem 0.5rem  0;
+}
+
+
 
 
 @media screen and (max-width: 540px){
