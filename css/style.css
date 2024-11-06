@@ -66,7 +66,7 @@ a {
 .mf-social-side-list {
   position: fixed;
   top: 40%;
-  left: 1rem;
+  left: 0.7rem;
   z-index: 100;
 }
 
@@ -79,8 +79,7 @@ a {
 }
 
 .mf-social-side-list ul li a {
-  color: var(--light-white);
-  background-color: var(--button-color);
+  color: white;
   border-radius: 10%;
   width: 4rem;
   height: 4rem;
@@ -101,6 +100,40 @@ a {
 
 .mf-social-side-list ul li a i {
   font-size: 2rem;
+}
+
+.instagram-icon{
+  background: rgb(98,60,199);
+  background: linear-gradient(
+    180deg, rgba(98,60,199,1) 0%, 
+    rgba(238,50,119,1) 60%, 
+    rgba(244,133,88,1) 100%);
+}
+
+.whatsapp-icon{
+  background-color: #25D366;
+  position: relative;
+}
+
+.whatsapp-icon::after {
+  content: '1';
+  position: absolute;
+  top: -0.5rem; 
+  right: -0.5rem;
+  background-color: red; 
+  color: white; 
+  font-size: 1rem; 
+  width: 1.8rem; 
+  height: 1.8rem; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.mail-icon{
+  background-color: #E70F10;
 }
 
 
