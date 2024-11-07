@@ -133,7 +133,7 @@ a {
 }
 
 .mail-icon{
-  background-color: #E70F10;
+  background-color: #dd4b39;
 }
 
 
@@ -196,8 +196,16 @@ a {
 }
 
 .card-producto h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.card-producto h3 img {
+  width: 1.5rem;
+  margin: 0.5rem;
 }
 
 .info-btn {
