@@ -379,7 +379,6 @@ footer {
   padding: 2px 4px;
 }
 
-
 .footer-info-contactanos div a i {
   margin-right: 0.5rem;
 }
@@ -423,6 +422,7 @@ footer {
   justify-content: center;
   background-color: var(--light-gray);
   color: var(--light-white);
+  padding-bottom: 2rem;
 }
 
 .footer-personal-info span{
@@ -591,20 +591,25 @@ footer {
 
   /*Footer*/
 
-  .contactenos span {
+  .footer-info-contactanos h2 {
     margin: 0.5rem;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
 
-  .contactenos span a{
+  .footer-info-contactanos div a{
     text-decoration: underline;
+  }
+
+  .footer-info-contactanos div a .fi{
+    display: inline-block;
+    text-decoration: none;
   }
 
   .footer-logo{
     display: none;
   }
 
-  .contactenos a:active {
+  .footer-info-contactanos div a:active {
     background-color: var(--light-white);
     color: var(--light-gray);
   }
@@ -612,21 +617,19 @@ footer {
   .footer-social-media{
     display: flex;
     margin: 4rem 0;
-
   }
 
   .footer-social-media a{
     font-size: 3rem;
     color: var(--light-white);
     margin: 0 1.5rem;
-    visibility: visible;
   }
 
-  .descarga span {
-    font-size: 2.2rem;
+  .footer-info-descarga h2 {
+    font-size: 2.4rem;
   }
 
-  .descarga-img img {
+  .footer-info-descarga-img img {
     width: 15rem;
     margin: 0 1rem;
   }
@@ -705,7 +708,6 @@ footer {
   }
 
   .social-media-icons img {
-    visibility: visible;
     width: 4rem;
     margin: 0 1.5rem;
   }
@@ -814,6 +816,5 @@ footer {
   .envios-info span:nth-child(2) {
     font-size: 2rem;
   }
-
 
 }
