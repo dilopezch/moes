@@ -24,7 +24,9 @@
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
   <link rel="icon" type="image/png" href="./assets/favion.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cards.css">
   <title>Moes Smart Home</title>
 
 </head>
@@ -79,80 +81,85 @@
           </li>
         </ul>
       </div>
+    </section> 
 
-    </section>
-
-    <section class="productos"> <!-- Productos -->
+    <section class="productos">
       <h1>Nuestros Productos</h1>
-      <div class="menu-productos">
-        <a href="">Mas populares</a> / <a href="">Nuevos</a>
-      </div>
 
-      <div class="grid-productos">
-
-        <div class="card-producto">
-          <img src="./assets/img/smart-light-switch.png" alt="smart-light-switch">
-          <h2>Smart Switch </h2>
-          <div>
-            <h3> 
-              <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
-              <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee</h3> <!-- RF -->
+      <div class="container">
+        <div class="section-container-cards swiper">
+          <div class="slider-wrapper">
+            <div class="card-list swiper-wrapper">
+    
+              <div class="card-item swiper-slide">
+                <img class="product-image" src="./assets/img/panel.png" alt="smart-panel">
+                <h2 class="product-name">Smart Panel</h2>
+                <p class="product-types"> 
+                  <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
+                  <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
+                </p>
+                <button class="more-info-btn">Mas información</button>
+              </div>
+    
+              <div class="card-item swiper-slide">
+                <img class="product-image" src="./assets/img/switch.png" alt="smart-panel">
+                <h2 class="product-name">Smart Switch</h2>
+                <p class="product-types"> 
+                  <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
+                  <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
+                </p>
+                <button class="more-info-btn">Mas información</button>
+              </div>
+    
+              <div class="card-item swiper-slide">
+                <img class="product-image" src="./assets/img/switch-tactil.png" alt="smart-panel">
+                <h2 class="product-name">Smart Switch</h2>
+                <p class="product-types"> 
+                  <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
+                  <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee /
+                  <img src="./assets/icons/rf.png" alt="rf-icon">RF
+                </p>
+                <button class="more-info-btn">Mas información</button>
+              </div>
+    
+              <div class="card-item swiper-slide">
+                <img class="product-image" src="./assets/img/door-lock.png" alt="smart-panel">
+                <h2 class="product-name">Smart Door Lock</h2>
+                <p class="product-types"> 
+                  <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
+                  <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
+                </p>
+                <button class="more-info-btn">Mas información</button>
+              </div>
+    
+              <div class="card-item swiper-slide">
+                <img class="product-image" src="./assets/img/control.png" alt="smart-panel">
+                <h2 class="product-name">Smart Control</h2>
+                <p class="product-types"> 
+                  <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
+                  <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
+                </p>
+                <button class="more-info-btn">Mas información</button>
+              </div>
+    
+              <div class="card-item swiper-slide">
+                <img class="product-image" src="./assets/img/sensor.png" alt="smart-panel">
+                <h2 class="product-name">Smart Sensor</h2>
+                <p class="product-types"> 
+                  <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
+                  <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
+                </p>
+                <button class="more-info-btn">Mas información</button>
+              </div>
+    
+            </div>
+    
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
           </div>
-          <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
-            rel="noopener">
-            <button type="button" class="info-btn"> Mas información
-              <span class="material-icons">arrow_outward</span>
-            </button>
-          </a>
-        </div>
-
-        <div class="card-producto">
-          <img src="./assets/img/smart-light-dimmer.png" alt="smart-light-dimmer">
-          <h2>Smart Switch </h2>
-          <div>
-            <h3> 
-              <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
-              <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee / 
-              <img src="./assets/icons/rf.png" alt="rf-icon">RF</h3>
-          </div>
-          <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
-            rel="noopener">
-            <button type="button" class="info-btn"> Mas información
-              <span class="material-icons">arrow_outward</span>
-            </button>
-          </a>
-        </div>
-
-        <div class="card-producto">
-          <img src="./assets/img/smart-door-lock.png" alt="smart-door-lock">
-          <h2>Smart DoorLock </h2>
-          <div>
-            <h3> 
-              <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
-              <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee</h3> <!-- RF -->
-          </div>
-          <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
-            rel="noopener">
-            <button type="button" class="info-btn"> Mas información
-              <span class="material-icons">arrow_outward</span>
-            </button>
-          </a>
-        </div>
-
-        <div class="card-producto">
-          <img src="./assets/img/smart-vibration-sensor.png" alt="smart-vibration-sensor">
-          <h2>Smart Sensor </h2>
-          <div>
-            <h3> 
-              <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
-              <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee</h3> <!-- RF -->
-          </div>
-          <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
-            rel="noopener">
-            <button type="button" class="info-btn"> Mas información
-              <span class="material-icons">arrow_outward</span>
-            </button>
-          </a>
+    
         </div>
       </div>
     </section>
@@ -274,7 +281,8 @@
   </footer>
 
   <script src="./js/main.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>
