@@ -35,38 +35,25 @@ a {
   color: var(--very-dark);
 }
 
-.info-btn {
-  border: 0;
-  background-color: var(--button-color);
-  font-family: var(--secondary-font);
-  padding: 1.5rem;
-  font-size: 1.5rem;
-  color: var(--light-white);
-  border-radius: 60px;
-  display: flex;
-  margin: 2rem auto;
-  cursor: pointer;
-}
-
 /*Info categorías*/
 .categorias {
   background-color: var(--light-gray);
   text-align: center;
-  margin: 5rem 4rem;
-  padding: 1rem 10rem;
+  margin: 5rem 6rem;
+  padding: 1rem 10rem 3rem 10rem;
   border-radius: 10px;
   /*overflow: hidden;*/
 }
 
 .categorias div {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   color: var(--light-white);
   margin: 6rem 0 4rem 0;
 }
 
 .categorias div a {
   color: var(--light-white);
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
@@ -84,6 +71,7 @@ a {
   margin: 3rem auto;
 }
 
+
 /*Imágenes categorías*/
 .grid-categoria-img {
   display: grid;
@@ -99,7 +87,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -118,39 +105,67 @@ a {
   font-size: 3.8rem;
   font-weight: 300;
   margin: 4rem 0 19rem 0;
+  text-shadow: 0px 0px 9px var(--very-dark);
 }
 
-.grid-categoria-img div .info-btn {
-  background-color: white;
-  color: black;
-  border: 2px solid white;
+.grid-categoria-img div a {
+  margin-bottom: 2rem;
 }
+
 
 /*Envíos*/
 .section-envios-info {
   display: flex;
-  justify-content: center;
-  padding: 10rem 5rem;
+  justify-content: space-between;
+  padding: 8rem 20rem;
 }
 
 .envios-info {
   margin: 5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: var(--light-gray);
 }
 
 .envios-info .material-icons {
-  font-size: 6rem;
+  font-size: 5rem;
   margin-right: 0.5rem;
 }
 
 .envios-info span:nth-child(2) {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 
 @media screen and (max-width: 540px) {
+
+  .productos h1{
+    font-size: 2.8rem;
+    margin: 7rem 0 3rem;
+  }
+
+  /*Info categorías*/
+  .categorias {
+    margin: 3rem 0;
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  .categorias div {
+    font-size: 1.5rem;
+    margin: 3rem 0;
+  }
+
+  .categorias div a {
+    font-size: 1.5rem;
+  }
+
+  .categorias p {
+    font-size: 1.2rem;
+    margin: 3rem 0;
+  }
+
 
   /*Imágenes categorías*/
   .grid-categoria-img {
@@ -160,6 +175,11 @@ a {
     grid-column-gap: 0;
     grid-row-gap: 0;
   }
+
+  .grid-categoria-img div h2 {
+    font-size: 3.2rem;
+  }
+
 
   /*Envíos*/
   .section-envios-info {
@@ -214,7 +234,6 @@ a {
     font-size: 1.5rem;
     margin: 3rem;
   }
-
 
   /*Envíos*/
   .section-envios-info {
@@ -277,7 +296,7 @@ a {
 
   /*Envíos*/
   .section-envios-info {
-    padding: 8rem 2rem;
+    padding: 8rem 5rem;
   }
 
   .envios-info {
@@ -290,7 +309,7 @@ a {
   }
 
   .envios-info span:nth-child(2) {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
 }
@@ -298,7 +317,7 @@ a {
 
 @media screen and (min-width: 1025px) and (max-width: 2560px) {
 
-  /*Envíos*/
+  /*Envíos
   .section-envios-info {
     padding: 8rem 2rem;
   }
@@ -314,6 +333,6 @@ a {
 
   .envios-info span:nth-child(2) {
     font-size: 2rem;
-  }
+  }*/
 
 }

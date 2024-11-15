@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Manejo temporal de la caché -->
+  <!--Manejo temporal de la caché-->
   <meta http-equiv="Expires" content="0">
   <meta http-equiv="Last-Modified" content="0">
   <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
   <meta http-equiv="Pragma" content="no-cache">
-  <!-- -->
+  <!--Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,24 +18,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+  <!--Icons-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
   <link rel='stylesheet'
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
   <link rel="icon" type="image/png" href="./assets/favion.png">
+  <!--Swiper-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!--Style sheets-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/social_media_sidebar.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/footer.css">
-  <title>Moes Smart Home</title>
 
+  <title>Moes Smart Home</title>
 </head>
 
 <body>
 
+  <!-- header -->
   <header>
     <a href="">
       <img src="./assets/img/logo_moes.png" alt="logo_moes" class="logo">
@@ -57,14 +61,16 @@
 
   <main>
 
-    <section> <!-- video intro -->
+    <!-- video intro -->
+    <section> 
       <video class="intro-video" muted loop playsinline autoplay> <!-- autoplay -->
         <source src="./assets/video/moes-intro.mp4">
         <p>Tu navegador no admite la etiqueta de video.</p>
       </video>
     </section>
 
-    <section class="social-media"> <!-- social media sidebar -->
+    <!-- social media sidebar -->
+    <section class="social-media"> 
       <div class="mf-social-side-list">
         <ul>
           <li>
@@ -86,6 +92,7 @@
       </div>
     </section> 
 
+    <!-- product cards -->
     <section class="productos">
       <h1>Nuestros Productos</h1>
 
@@ -167,30 +174,26 @@
       </div>
     </section>
 
+    <!-- category slider -->
     <section class="categorias">
       <div>
         <a href="">Smart Switch</a> / <a href="">Smart Controller</a> / <a href="">Smart Module</a>
       </div>
       <img src="./assets/img/smart-switch-group.jpg" alt="smart-switch-group">
-      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat...</p>
+      <p></p>
       <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
         rel="noopener">
-        <button type="button" class="info-btn"> Mas información
-          <span class="material-icons">arrow_outward</span>
-        </button>
+        <button type="button" class="more-info-btn"> Mas información</button>
       </a>
     </section>
 
+    <!-- category images -->
     <section class="grid-categoria-img">
       <div>
         <h2>Smart Hub</h2>
         <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
           rel="noopener">
-          <button type="button" class="info-btn"> Mas información
-            <span class="material-icons">arrow_outward</span>
-          </button>
+          <button type="button" class="more-info-btn"> Mas información</button>
         </a>
       </div>
 
@@ -198,13 +201,12 @@
         <h2>Smart Door Lock</h2>
         <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
           rel="noopener">
-          <button type="button" class="info-btn"> Mas información
-            <span class="material-icons">arrow_outward</span>
-          </button>
+          <button type="button" class="more-info-btn"> Mas información</button>
         </a>
       </div>
     </section>
 
+    <!-- warranty/shipping -->
     <section class="section-envios-info">
       <div class="envios-info">
         <span class="material-icons">flight</span>
@@ -219,6 +221,7 @@
 
   </main>
 
+  <!-- Footer info -->
   <footer>
     <div class="footer-info">
       <div class="footer-info-contactanos">
@@ -279,11 +282,9 @@
       <a href="mailto:dilopezch@gmail.com" target="_blank" rel="noopener"><i class="fi fi-rr-envelope"></i></i></a>
       <a href="https://www.linkedin.com/in/diana-lopez-35089a228/" target="_blank" rel="noopener"><i class="fi fi-brands-linkedin"></i></a>
     </div>
-
-    
   </footer>
 
-  <script src="./js/hambMenu.js"></script>
+  <script src="./js/mobile_menu.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/slider.js"></script>
 </body>
