@@ -64,9 +64,11 @@ header {
     top: 0;
     right: 0;
     bottom: 0;
+    z-index: 1000;
     background-color: var(--very-dark);
     padding: 3rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    
   }
 
   .visible {
