@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Manejo temporal de la caché-->
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <!--Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel="icon" type="image/png" href="../assets/favion.png">
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!--Style sheets-->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/cards.css">
+  <link rel="stylesheet" href="../css/cards_category.css">
+  <link rel="stylesheet" href="../css/social_media_sidebar.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <title>Catálogo</title>
+</head>
+<body>
+
+  <!-- header -->
+  <header>
+    <a href="../index.html">
+      <img src="../assets/img/logo_moes.png" alt="logo_moes" class="logo">
+    </a>
+    <button class="abrir-menu" id="abrir">
+      <img src="../assets/icons/menu.svg" alt="btn-abrir" id="menu">
+    </button>
+    <nav id="nav">
+      <button class="cerrar-menu" id="cerrar">
+        <img src="../assets/icons/close.svg" alt="btn-cerrar">
+      </button>
+      <ul class="nav-list">
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="./wip-page.html">Nosotros</a></li>
+        <li><a href="./wip-page.html">Distribuidores</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- category cards -->
+    <section class="category-card-container">
+
+      <div class="category-card">
+        <img src="../assets/img/hub_controller_category.png" alt="">
+        <h2>Smart Hub & Smart Controller</h2>
+        <button class="more-info-btn" onclick="openPdfSection(20)">Ver productos</button>
+      </div>
+
+      <div class="category-card">
+        <img src="../assets/img/switch_category.png" alt="">
+        <h2>Smart Switch</h2>
+        <button class="more-info-btn" onclick="openPdfSection(3)">Ver productos</button>
+      </div>
+
+      <div class="category-card">
+        <img src="../assets/img/door_lock_bell_category.png" alt="">
+        <h2>Smart Door Lock & Door Bell</h2>
+        <button class="more-info-btn" onclick="openPdfSection(38)">Ver productos</button>
+      </div>
+
+      <div class="category-card">
+        <img src="../assets/img/sensor_category.png" alt="">
+        <h2>Smart Sensor</h2>
+        <button class="more-info-btn" onclick="openPdfSection(24)">Ver productos</button>
+      </div>
+    </section>
+
+    <!-- social media sidebar -->
+    <section class="social-media"> 
+      <div class="mf-social-side-list">
+        <ul>
+          <li>
+            <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
+              rel="noopener" class="whatsapp-icon">
+              <i class="fi fi-brands-whatsapp"></i>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:prointingsas@gmail.com?Subject=Información%20de%20productos" target="_blank" rel="noopener" class="mail-icon">
+              <i class="fi fi-rr-envelope"></i></i></a>
+              <!--<i class="fi fi-brands-google"></i>-->
+          </li>
+          <li>
+            <a href="https://www.instagram.com/moescolombia/" target="_blank" rel="noopener" class="instagram-icon"><i
+                class="fi fi-brands-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section> 
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <div class="footer-info-contactanos">
+        <h2>Contáctanos</h2>
+        <div>
+          <h3>E-mail:</h3>
+          <a href="mailto:prointingsas@gmail.com?Subject=Información%20de%20productos" target="_blank">
+            <i class="fi fi-rr-envelope"></i></i>
+            prointingsas@gmail.com</a> 
+          <a href="mailto:prointingsas@moeshouse.com?Subject=Información%20de%20productos" target="_blank">
+            <i class="fi fi-rr-envelope"></i></i>
+            prointingsas@moeshouse.com</a>
+        </div>
+  
+        <div>
+          <h3>Celular:</h3> 
+          <a href="tel:+573164908069" target="_blank">
+            <i class="fi fi-rr-phone-call"></i>
+            +57 316 490 8069</a>
+        </div>
+  
+        <div>
+          <h3>Dirección:</h3>
+          <a href="https://maps.app.goo.gl/SJEBz1sbV7hwscyT6" target="_blank" rel="noopener">
+            <i class="fi fi-rs-marker"></i>
+            Carrera 47 #94-82 <br> Barranquilla - Atlántico</a>
+        </div>
+      </div>
+  
+      <div class="footer-social-media">
+        <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
+          rel="noopener"><i class="fi fi-brands-whatsapp"></i></a>
+        <a href="mailto:prointingsas@gmail.com?Subject=Información%20de%20productos" target="_blank" rel="noopener"><i class="fi fi-rr-envelope"></i></i></a>
+        <a href="https://www.instagram.com/moescolombia/" target="_blank" rel="noopener"><i
+            class="fi fi-brands-instagram"></i></a>
+      </div>
+
+      <div class="footer-logo">
+        <img src="../assets/img/logo_moes-white.png" alt="">
+      </div>
+  
+      <div class="footer-info-descarga">
+        <h2>App disponible para descarga</h2>
+        <img src="../assets/img/app-qr.png" alt="qr" class="footer-info-descarga-qr">
+        <div class="footer-info-descarga-img">
+          <a href="https://apps.apple.com/ar/app/moes/id1445259938" target="_blank" rel="noopener">
+            <img src="../assets/img/appStore.png" alt="appstore-logo">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.moes.wz&pcampaignid=web_share" target="_blank" rel="noopener">
+            <img src="../assets/img/playStore.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-personal-info"> 
+      <span>Desarrollado por Diana López - 2024</span>
+      <a href="mailto:dilopezch@gmail.com" target="_blank" rel="noopener"><i class="fi fi-rr-envelope"></i></i></a>
+      <a href="https://www.linkedin.com/in/diana-lopez-35089a228/" target="_blank" rel="noopener"><i class="fi fi-brands-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script src="../js/mobile_menu.js"></script>
+  <script src="../js/openpdf.js"></script>
+  
+</body>
+</html>

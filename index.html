@@ -52,7 +52,7 @@
         <img src="./assets/icons/close.svg" alt="btn-cerrar">
       </button>
       <ul class="nav-list">
-        <li><a href="./pages/wip-page.html">Catálogo</a></li>
+        <li><a href="./pages/catalogo.html">Catálogo</a></li>
         <li><a href="./pages/wip-page.html">Nosotros</a></li>
         <li><a href="./pages/wip-page.html">Distribuidores</a></li>
       </ul>
@@ -108,7 +108,7 @@
                   <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
                   <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
                 </p>
-                <button class="more-info-btn">Mas información</button>
+                <button class="more-info-btn" onclick="openPdfSection(22)">Mas información</button>
               </div>
     
               <div class="card-item swiper-slide">
@@ -118,7 +118,7 @@
                   <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
                   <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
                 </p>
-                <button class="more-info-btn">Mas información</button>
+                <button class="more-info-btn" onclick="openPdfSection(6)">Mas información</button>
               </div>
     
               <div class="card-item swiper-slide">
@@ -129,7 +129,7 @@
                   <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee /
                   <img src="./assets/icons/rf.png" alt="rf-icon">RF
                 </p>
-                <button class="more-info-btn">Mas información</button>
+                <button class="more-info-btn" onclick="openPdfSection(7)">Mas información</button>
               </div>
     
               <div class="card-item swiper-slide">
@@ -139,7 +139,7 @@
                   <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
                   <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
                 </p>
-                <button class="more-info-btn">Mas información</button>
+                <button class="more-info-btn" onclick="openPdfSection(39)">Mas información</button>
               </div>
     
               <div class="card-item swiper-slide">
@@ -149,7 +149,7 @@
                   <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
                   <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
                 </p>
-                <button class="more-info-btn">Mas información</button>
+                <button class="more-info-btn" onclick="openPdfSection(23)">Mas información</button>
               </div>
     
               <div class="card-item swiper-slide">
@@ -159,13 +159,12 @@
                   <img src="./assets/icons/wifi.png" alt="wifi-icon">WiFi / 
                   <img src="./assets/icons/zigbee.svg" alt="zigbee-icon">ZigBee
                 </p>
-                <button class="more-info-btn">Mas información</button>
+                <button class="more-info-btn" onclick="openPdfSection(25)">Mas información</button>
               </div>
     
             </div>
-    
+            <!--paginación swiper-->
             <div class="swiper-pagination"></div>
-    
             <div class="swiper-slide-button swiper-button-prev"></div>
             <div class="swiper-slide-button swiper-button-next"></div>
           </div>
@@ -191,17 +190,17 @@
     <section class="grid-categoria-img">
       <div>
         <h2>Smart Hub</h2>
-        <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
+        <a href="" target="_blank"
           rel="noopener">
-          <button type="button" class="more-info-btn"> Mas información</button>
+          <button type="button" class="more-info-btn" onclick="openPdfSection(20)"> Mas información</button>
         </a>
       </div>
 
       <div>
         <h2>Smart Door Lock</h2>
-        <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
+        <a href="" target="_blank"
           rel="noopener">
-          <button type="button" class="more-info-btn"> Mas información</button>
+          <button type="button" class="more-info-btn" onclick="openPdfSection(38)"> Mas información</button>
         </a>
       </div>
     </section>
@@ -278,13 +277,14 @@
     </div>
 
     <div class="footer-personal-info"> 
-      <span>Página creada por Diana López - 2024</span>
+      <span>Desarrollado por Diana López - 2024</span>
       <a href="mailto:dilopezch@gmail.com" target="_blank" rel="noopener"><i class="fi fi-rr-envelope"></i></i></a>
       <a href="https://www.linkedin.com/in/diana-lopez-35089a228/" target="_blank" rel="noopener"><i class="fi fi-brands-linkedin"></i></a>
     </div>
   </footer>
 
   <script src="./js/mobile_menu.js"></script>
+  <script src="./js/openpdf.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/slider.js"></script>
 </body>
