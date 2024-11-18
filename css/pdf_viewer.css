@@ -1,0 +1,18 @@
+@import './variables.css';
+
+
+.pdf-viewer-container {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 2rem ;
+}
+.pdf-viewer {
+  width: 90%;
+  height: 100vh;
+  border-radius: 10px;
+}
+
+.pdf-viewer .fallback p {
+  font-size: 1.6rem;
+  text-align: center;
+}

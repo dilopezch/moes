@@ -23,7 +23,7 @@
   <link rel='stylesheet'
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css'>
-  <link rel="icon" type="image/png" href="./assets/favion.png">
+  <link rel="icon" type="image/png" href="../assets/favion.png">
   <!--Swiper-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <!--Style sheets-->
@@ -60,25 +60,29 @@
   <main>
     <!-- category cards -->
     <section class="category-card-container">
+
       <div class="category-card">
         <img src="../assets/img/hub_controller_category.png" alt="">
         <h2>Smart Hub & Smart Controller</h2>
-        <button class="more-info-btn">Ver mas</button>
+        <button class="more-info-btn" onclick="openPdfSection(20)">Ver productos</button>
       </div>
+
       <div class="category-card">
         <img src="../assets/img/switch_category.png" alt="">
         <h2>Smart Switch</h2>
-        <button class="more-info-btn">Ver mas</button>
+        <button class="more-info-btn" onclick="openPdfSection(3)">Ver productos</button>
       </div>
+
       <div class="category-card">
         <img src="../assets/img/door_lock_bell_category.png" alt="">
         <h2>Smart Door Lock & Door Bell</h2>
-        <button class="more-info-btn">Ver mas</button>
+        <button class="more-info-btn" onclick="openPdfSection(38)">Ver productos</button>
       </div>
+
       <div class="category-card">
         <img src="../assets/img/sensor_category.png" alt="">
         <h2>Smart Sensor</h2>
-        <button class="more-info-btn small-more-info-btn">Ver mas</button>
+        <button class="more-info-btn" onclick="openPdfSection(24)">Ver productos</button>
       </div>
     </section>
 
@@ -169,6 +173,7 @@
   </footer>
 
   <script src="../js/mobile_menu.js"></script>
+  <script src="../js/openpdf.js"></script>
   
 </body>
 </html>
