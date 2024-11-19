@@ -1,0 +1,14 @@
+@import './variables.css';
+
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10rem 0;
+
+}
+
+#map {
+  width: 700px;
+}
