@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Map of Colombia</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
     <style>
-        #map { height: 600px; }
+        #map {
+
+            height: 90vh;  
+        }
     </style>
 </head>
+
 <body>
     <div id="map"></div>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-        var map = L.map('map').setView([4.5709, -74.2973], 6);
+        var map = L.map('map', {
+            zoomControl: false,          // Desactiva el control de zoom (+/-)
+            scrollWheelZoom: false,      // Desactiva el zoom con la rueda del ratón
+            doubleClickZoom: false,      // Desactiva el zoom al hacer doble clic
+            dragging: false              // Opcional: Desactiva el arrastre del mapa
+        }).setView([4.5709, -74.2973], 5);
 
         var geojson;
         fetch('https://gist.githubusercontent.com/john-guerra/43c7656821069d00dcbc/raw/be6a6e239cd5b5b803c6e7c2ec405b793a9064dd/Colombia.geo.json')
@@ -22,9 +33,14 @@
                 geojson = L.geoJSON(data, {
                     style: function (feature) {
                         switch (feature.properties.NOMBRE_DPT) {
-                            case 'ANTIOQUIA': return { color: 'red' };
-                            case 'Cundinamarca': return { color: 'green' };
-                            case 'Valle del Cauca': return { color: 'blue' };
+                            case 'ANTIOQUIA': return { color: '#2183D5', weight: 1};
+                            case 'ATLANTICO': return {color: '#2183D5', weight: 1};
+                            case 'LA GUAJIRA': return {color: '#2183D5', weight: 1};
+                            case 'MAGDALENA': return {color: '#2183D5', weight: 1};
+                            case 'CESAR': return {color: '#2183D5', weight: 1};
+                            case 'NARIÑO': return {color: '#2183D5', weight: 1};
+                            case 'CUNDINAMARCA': return {color: '#2183D5', weight: 1};
+                            case 'BOYACA': return {color: '#2183D5', weight: 1};
                             default: return { color: '#79858C', weight: 1 };
                         }
                     },
@@ -43,7 +59,7 @@
             var layer = e.target;
 
             layer.setStyle({
-                weight: 2,
+                weight: 1,
                 color: '#666',
                 dashArray: '',
                 fillOpacity: 0.7
@@ -59,16 +75,22 @@
         }
 
         var markers = [
-            { lat: 4.7110, lng: -74.0721, name: 'Bogotá' },
-            { lat: 6.2442, lng: -75.5812, name: 'Medellín' },
-            { lat: 3.4516, lng: -76.5320, name: 'Cali' }
+            { lat: 4.7110, lng: -74.0721, name: 'John Hernández <br> Contacto: 301 401 7681 <br> Cundinamarca' },
+            { lat: 5.5333, lng: -73.3667, name: 'John Hernández <br> Contacto: 301 401 7681 <br> Boyacá' },
+            { lat: 6.2442, lng: -75.5812, name: 'Diego Laverde <br> Contacto: 310 343 1657 <br> Antioquia'},
+            { lat: 10.5833, lng: -74.9100, name: 'Willian Ospina <br> Contacto: 301 307 7200 <br> Atlántico'},
+            { lat: 11.1442, lng: -72.9069, name: 'Abidas Orozco <br> Contacto: 317 667 5106 <br> La Guajira'},
+            { lat: 10.2419, lng: -74.2053, name: 'Abidas Orozco <br> Contacto: 317 667 5106 <br> Magdalena'},
+            { lat: 9.0349, lng: -73.7500, name: 'Abidas Orozco <br> Contacto: 317 667 5106 <br> Cesar'},
+            { lat: 1.2078, lng: -78.2772, name: 'Luis Burbano <br> Contacto:  <br> Nariño'}
         ];
 
-        markers.forEach(function(marker) {
+        markers.forEach(function (marker) {
             L.marker([marker.lat, marker.lng])
                 .addTo(map)
                 .bindPopup(marker.name);
         });
     </script>
 </body>
+
 </html>

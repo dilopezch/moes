@@ -26,12 +26,13 @@
   <link rel="icon" type="image/png" href="../assets/favion.png">
   <!--Swiper-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!--Map-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <!--Style sheets-->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/cards.css">
-  <link rel="stylesheet" href="../css/cards_category.css">
   <link rel="stylesheet" href="../css/distribuidores.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/mapa.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/pdf_viewer.css">
   <link rel="stylesheet" href="../css/social_media_sidebar.css">
@@ -62,7 +63,9 @@
   <main>
     <!--mapa distribuidores -->
     <section class="map-container">
+
       <div id="map"></div>
+
       <div class="contacto">
         <p>
           ¿Quieres ser distribuidor? <br>
@@ -159,10 +162,11 @@
       <a href="mailto:dilopezch@gmail.com" target="_blank" rel="noopener"><i class="fi fi-rr-envelope"></i></i></a>
       <a href="https://www.linkedin.com/in/diana-lopez-35089a228/" target="_blank" rel="noopener"><i class="fi fi-brands-linkedin"></i></a>
     </div>
-  </footer>
+  </footer>s
 
   <script src="../js/mobile_menu.js"></script>
-  <script type="text/javascript" src="../js/mapdata.js"></script>		
-<script  type="text/javascript" src="../js/countrymap.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../js/map.js"></script>
+
 </body>
 </html>
