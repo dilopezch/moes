@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Map of Colombia</title>
@@ -54,26 +55,78 @@
                 }).addTo(map);
             })
             .catch(error => console.error('Error loading GeoJSON:', error));
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Map of Colombia</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 600px;
+    }
+  </style>
+</head>
 
-        function highlightFeature(e) {
-            var layer = e.target;
+<body>
+  <div id="map"></div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('map').setView([4.5709, -74.2973], 6);
 
+    var geojson;
+    fetch('https://gist.githubusercontent.com/john-guerra/43c7656821069d00dcbc/raw/be6a6e239cd5b5b803c6e7c2ec405b793a9064dd/Colombia.geo.json')
+      .then(response => response.json())
+      .then(data => {
+        geojson = L.geoJSON(data, {
+          style: function (feature) {
+            switch (feature.properties.NOMBRE_DPT) {
+              case 'ANTIOQUIA': return { color: 'red' };
+              case 'Cundinamarca': return { color: 'green' };
+              case 'Valle del Cauca': return { color: 'blue' };
+              default: return { color: '#79858C', weight: 1 };
+            }
+          },
+          onEachFeature: function (feature, layer) {
+            layer.on({
+              mouseover: highlightFeature,
+              mouseout: resetHighlight
+            });
+            layer.bindPopup(feature.properties.name);
+          }
+        }).addTo(map);
+      })
+      .catch(error => console.error('Error loading GeoJSON:', error));
+>>>>>>> 5f9ba9f6f077a6eef6bfcdb9798752a0b0b5565e
+
+    function highlightFeature(e) {
+      var layer = e.target;
+
+<<<<<<< HEAD
             layer.setStyle({
                 weight: 1,
                 color: '#666',
                 dashArray: '',
                 fillOpacity: 0.7
             });
+=======
+      layer.setStyle({
+        weight: 2,
+        color: '#666',
+        dashArray: '',
+        fillOpacity: 0.7
+      });
+>>>>>>> 5f9ba9f6f077a6eef6bfcdb9798752a0b0b5565e
 
-            if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-                layer.bringToFront();
-            }
-        }
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+      }
+    }
 
-        function resetHighlight(e) {
-            geojson.resetStyle(e.target);
-        }
+    function resetHighlight(e) {
+      geojson.resetStyle(e.target);
+    }
 
+<<<<<<< HEAD
         var markers = [
             { lat: 4.7110, lng: -74.0721, name: 'John Hernández <br> Contacto: 301 401 7681 <br> Cundinamarca' },
             { lat: 5.5333, lng: -73.3667, name: 'John Hernández <br> Contacto: 301 401 7681 <br> Boyacá' },
@@ -91,6 +144,20 @@
                 .bindPopup(marker.name);
         });
     </script>
+=======
+    var markers = [
+      { lat: 4.7110, lng: -74.0721, name: 'Bogotá' },
+      { lat: 6.2442, lng: -75.5812, name: 'Medellín' },
+      { lat: 3.4516, lng: -76.5320, name: 'Cali' }
+    ];
+
+    markers.forEach(function (marker) {
+      L.marker([marker.lat, marker.lng])
+        .addTo(map)
+        .bindPopup(marker.name);
+    });
+  </script>
+>>>>>>> 5f9ba9f6f077a6eef6bfcdb9798752a0b0b5565e
 </body>
 
 </html>
