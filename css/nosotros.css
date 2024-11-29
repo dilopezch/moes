@@ -1,0 +1,216 @@
+@import './variables.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--main-font);
+}
+
+/*imágen nosotros*/
+.nosotros img{
+  padding: 6rem;
+  width: 100%;
+}
+
+/*app información*/
+.app .app-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10rem 3rem;
+  background-color: #e6e6e6;
+}
+
+.app .app-info:nth-child(even) {
+  background-color: white;
+}
+
+.app-info-img, 
+.app-info-text{
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .app-info .app-info-img img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.app .app-info .app-info-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app .app-info .app-info-text p {
+  display: inline;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height:1.5;
+  color: var(--very-dark);
+  margin: 2rem 0;
+  text-align: center;
+  width: 70%;
+}
+
+
+/*registro*/
+.app-info-registro,
+.app-info-img-registro {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-info .app-info-registro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.app-info .app-info-registro h1 {
+  font-size: 3rem;
+}
+
+.app-info .app-info-registro p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height:1.5;
+  color: var(--very-dark);
+  width: 70%;
+}
+
+.app-info .app-info-registro ul {
+  padding-left: 23px;
+  width: 70%;
+}
+
+.app-info .app-info-registro ul li {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height:1.5;
+  color: var(--very-dark);
+}
+
+.app-info .app-info-img-registro img {
+  max-width: 80%;
+  min-width: 30rem;
+}
+
+/*add device*/
+.app-add-device-img,
+.app-add-device-text {
+  flex: 1 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-add-device-img img{
+  max-width: 400px;
+}
+
+.app-info .app-add-device-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.app-info .app-add-device-text h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.app-info .app-add-device-text p {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height:1.5;
+  text-align: center;
+  color: var(--very-dark);
+  width: 70%;
+}
+
+
+@media screen and (max-width: 768px){
+
+  /*imágen nosotros*/
+  .nosotros img{
+    padding: 2rem;
+    width: 100%;
+  }
+
+
+  /*app información*/
+  .app .app-info {
+    padding: 6rem 2rem;
+  }
+
+  .app .app-info .app-info-text p {
+    font-size: 1.6rem;
+  }
+
+
+  /*registro*/
+  .app-info .app-info-registro{
+    margin-bottom: 3rem;
+    padding: 0;
+  }
+  .app-info .app-info-registro h1 {
+    font-size: 2rem;
+  }
+  
+  .app-info .app-info-registro p {
+    font-size: 1.6rem;
+  }
+
+  .app-info .app-info-registro ul {
+    padding-left: 0;
+  }
+
+  .app-info .app-info-registro ul li {
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+
+  /*add device*/
+  .app-add-device-img img{
+    width: 30rem;
+    margin-bottom: 3rem;
+  }
+
+  .app-info .app-add-device-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .app-info .app-add-device-text h1 {
+    font-size: 2rem;
+  }
+
+  .app-info .app-add-device-text p {
+    font-size: 1.6rem;
+  }
+}
