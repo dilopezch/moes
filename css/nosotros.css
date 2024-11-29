@@ -17,7 +17,6 @@ html {
   width: 100%;
 }
 
-/*app información*/
 .app .app-info {
   display: flex;
   justify-content: center;
@@ -31,6 +30,8 @@ html {
   background-color: white;
 }
 
+
+/*app información*/
 .app-info-img, 
 .app-info-text{
   flex: 1 1 50%;
@@ -172,7 +173,11 @@ html {
     font-size: 1.6rem;
   }
 
+  .app .app-info .app-info-text img {
+    width: 30rem;
+  }
 
+  
   /*registro*/
   .app-info .app-info-registro{
     margin-bottom: 3rem;
