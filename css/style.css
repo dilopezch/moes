@@ -113,28 +113,16 @@ a {
 }
 
 
-/*Envíos*/
-.section-envios-info {
+/*section-video*/
+.section-video {
+  padding: 15rem 5rem;
   display: flex;
-  justify-content: space-between;
-  padding: 8rem 20rem;
-}
-
-.envios-info {
-  margin: 5rem;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  color: var(--light-gray);
+  align-content: center;
 }
 
-.envios-info .material-icons {
-  font-size: 5rem;
-  margin-right: 0.5rem;
-}
-
-.envios-info span:nth-child(2) {
-  font-size: 2.5rem;
+.video-index {
+  max-width: 100rem;
 }
 
 
@@ -181,27 +169,13 @@ a {
   }
 
 
-  /*Envíos*/
-  .section-envios-info {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 5rem 0;
+  /*section-video*/
+  .section-video {
+    padding: 10rem 2rem;
   }
 
-  .envios-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-  }
-
-  .envios-info .material-icons {
-    font-size: 4rem;
-  }
-
-  .envios-info span:nth-child(2) {
-    font-size: 1.8rem;
+  .video-index {
+    max-width: 30rem;
   }
   
 }
@@ -235,30 +209,14 @@ a {
     margin: 3rem;
   }
 
-  /*Envíos*/
-  .section-envios-info {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 5rem 0;
-  }
-
-  .envios-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0;
-  }
-
-  .envios-info .material-icons {
-    font-size: 4.5rem;
-    margin-right: 1rem;
-  }
-
-  .envios-info span:nth-child(2) {
-    font-size: 2.5rem;
-  }
-
+    /*section-video*/
+    .section-video {
+      padding: 10rem 2rem;
+    }
+  
+    .video-index {
+      max-width: 60rem;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -294,24 +252,15 @@ a {
     font-weight: 400;
   }
 
-  /*Envíos*/
-  .section-envios-info {
-    padding: 8rem 5rem;
+  /*section-video*/
+  .section-video {
+    padding: 10rem 2rem;
   }
 
-  .envios-info {
-    margin: 3rem;
+  .video-index {
+    max-width: 90rem;
   }
-
-  .envios-info .material-icons {
-    font-size: 4rem;
-    margin-right: 1rem;
-  }
-
-  .envios-info span:nth-child(2) {
-    font-size: 2.2rem;
-  }
-
+  
 }
 
 
