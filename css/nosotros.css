@@ -163,6 +163,11 @@ html {
     padding: 6rem 2rem;
   }
 
+  .app .app-info .app-info-img img {
+    width: 30rem;
+    margin-bottom: 3rem;
+  }
+
   .app .app-info .app-info-text p {
     font-size: 1.6rem;
   }
