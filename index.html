@@ -27,6 +27,8 @@
   <link rel="icon" type="image/png" href="./assets/favion.png">
   <!--Swiper-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!--BeerSlider-->
+  <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
   <!--Style sheets-->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cards.css">
@@ -173,17 +175,23 @@
       </div>
     </section>
 
-    <!-- category slider -->
-    <section class="categorias">
-      <div>
-        <a href="">Smart Switch</a> / <a href="">Smart Controller</a> / <a href="">Smart Module</a>
+    <!-- slider images -->
+    <section class="slider-images">
+
+      <div class="side-text">
+        <h1>Transformación Inteligente</h1>
+        <p>Crea ambientes perfectos para cada momento.</p>
+        <button type="button" class="more-info-btn" 
+        onclick="window.location.href='pages/catalogo.html'"> Mas información</button>
       </div>
-      <img src="./assets/img/smart-switch-group.jpg" alt="smart-switch-group">
-      <p></p>
-      <a href="https://wa.me/573164908069/?text=Hola!%20Quiero%20información%20de%20un%20producto" target="_blank"
-        rel="noopener">
-        <button type="button" class="more-info-btn"> Mas información</button>
-      </a>
+
+      <div id="slider" class="beer-slider">
+        <img src="./assets/img/before.jpg" alt="">
+        <div class="beer-reveal">
+          <img src="./assets/img/after.jpg" alt="">
+        </div>
+      </div>
+
     </section>
 
     <!-- category images -->
@@ -201,6 +209,14 @@
 
     <!-- video -->
     <section class="section-video">
+    
+      <div class="side-text">
+        <h1>El futuro de tu hogar, en tus manos</h1>
+        <p>Descubre el poder de controlar todo desde tu smartphone.</p>
+        <button type="button" class="more-info-btn" 
+        onclick="window.location.href='pages/catalogo.html'"> Mas información</button>
+      </div>
+
       <video class="video-index" controls muted > 
         <source src="./assets/video/video-index.mp4">
         <p>Tu navegador no admite la etiqueta de video.</p>
@@ -274,9 +290,15 @@
 
   <script src="./js/mobile_menu.js"></script>
   <script src="./js/openpdf.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/slider.js"></script>
-  <script src="./js/preloader.js"></script>
+
+  <!-- <script src="./js/preloader.js"></script> -->
+  
+
+  <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+  <script src="./js/image-slider.js"></script>
 </body>
 
 </html>
