@@ -7,8 +7,8 @@ spinnerDiv.classList.add('spinner');
 
 const logoPreloader = document.createElement('img');
 logoPreloader.src = '../assets/img/logo_moes.png';
-logoPreloader.alt = 'Imagen de prueba'; // Texto alternativo
-logoPreloader.width = 150; // Ancho en píxeles
+logoPreloader.alt = 'Imagen de prueba'; 
+logoPreloader.width = 150;
 
 preloaderDiv.appendChild(logoPreloader);
 preloaderDiv.appendChild(spinnerDiv);
@@ -29,4 +29,9 @@ links.forEach(link => {
       window.location.href = this.href; // Redirigir al destino
     }, 1000);
   })
+});
+
+window.addEventListener('popstate', (event) => {
+  console.log('El usuario navegó hacia atrás o adelante');
+  console.log('Estado actual:', event.state); // Puedes acceder al estado guardado
 });
