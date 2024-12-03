@@ -2,7 +2,7 @@ var map = L.map('map', {
   zoomControl: true,          // Desactiva el control de zoom (+/-)
   scrollWheelZoom: false,      // Desactiva el zoom con la rueda del ratón
   doubleClickZoom: false,      // Desactiva el zoom al hacer doble clic
-  dragging: true              // Opcional: Desactiva el arrastre del mapa
+  dragging: false              // Opcional: Desactiva el arrastre del mapa
 }).setView([4.5709, -74.2973], 6);
 
 

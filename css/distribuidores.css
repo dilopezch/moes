@@ -5,6 +5,26 @@ html {
   font-family: var(--main-font);
 }
 
+.info-gerente {
+  margin-top: 10rem;
+}
+
+.info-gerente p {
+  margin: 3rem 0;
+  padding: 1rem;
+  text-align: center; 
+  font-size: 1.8rem;
+}
+
+.info-gerente p span {
+  display: inline-block; 
+  font-weight: bold; 
+  font-size: 2rem; 
+  color: black; 
+  text-transform: uppercase; 
+  margin-bottom: 2rem;
+}
+
 .map-container {
   display: flex;
   align-items: center;
@@ -39,24 +59,21 @@ html {
   font-weight: bold;
 }
 
-.info-gerente p {
-  margin: 3rem 0;
-  padding: 1rem;
-  text-align: center; 
-  font-size: 1.8rem;
-}
-
-.info-gerente p span {
-  display: inline-block; 
-  font-weight: bold; 
-  font-size: 2rem; 
-  color: black; 
-  text-transform: uppercase; 
-  margin-bottom: 2rem;
-}
-
 
 @media (max-width: 540px) {
+
+  .info-gerente {
+    margin-top: 6rem;
+  }
+  
+  .info-gerente p {
+    font-size: 1.6rem;
+  }
+  
+  .info-gerente p span {
+    font-size: 1.8rem; 
+  }
+
   #map {
     width: 500px;
     height: 500px;  
