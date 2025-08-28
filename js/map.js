@@ -21,7 +21,10 @@ fetch('https://gist.githubusercontent.com/john-guerra/43c7656821069d00dcbc/raw/b
           case 'CESAR': return { color: '#2183D5', weight: 1 };
           case 'NARIÑO': return { color: '#2183D5', weight: 1 };
           case 'CUNDINAMARCA': return { color: '#2183D5', weight: 1 };
-          case 'BOYACA': return { color: '#2183D5', weight: 1 };
+          case 'META': return { color: '#2183D5', weight: 1 };
+          case 'SANTANDER': return { color: '#2183D5', weight: 1 };
+          case 'SAN ANDRES': return { color: '#2183D5', weight: 1 };
+          case 'VALLE DEL CAUCA': return { color: '#2183D5', weight: 1 };
           default: return { color: '#79858C', weight: 1 };
         }
       },
@@ -68,45 +71,66 @@ const redIcon = L.icon({
 
 var markers = [
   {
+    // Bogotá, Cundinamarca
     lat: 4.7110,
     lng: -74.0721,
-    name: '<div class="font-size-marker-map">John Hernández <br> Contacto: 301 401 7681 <br> Cundinamarca</div>'
+    name: '<div class="font-size-marker-map"> Cundinamarca <br><br> MAINFRAME <br> Ing. Juan Pablo Zapata  <br> Contacto: +57 317 5085599 </div> <br> <div class="font-size-marker-map">Ing. John Hernández <br> Contacto: +57 301 4017681 </div>'
   },
   { 
-    lat: 5.5333, 
-    lng: -73.3667, 
-    name: '<div class="font-size-marker-map">John Hernández <br> Contacto: 301 401 7681 <br> Boyacá</div>' 
-  },
-  { 
+    // Medellín, Antioquia
     lat: 6.2442, 
     lng: -75.5812, 
-    name: '<div class="font-size-marker-map">Diego Laverde <br> Contacto: 310 343 1657 <br> Antioquia</div>' 
+    name: '<div class="font-size-marker-map">Antioquia <br><br> DomoSmarTech <br> Ing. Diego Laverde <br> Contacto: +57 310 343 1657 </div>' 
   },
   { 
+    // Barranquilla, Atlántico
     lat: 10.5833, 
     lng: -75.2100, 
-    name: '<div class="font-size-marker-map">Willian Ospina <br> Contacto: 301 307 7200 <br> Atlántico</div>' 
+    name: '<div class="font-size-marker-map">Atlántico <br><br> Comercial <br> Ing. Willian Ospina <br> Contacto: +57 301 307 7200 </div>' 
   },
-  { 
+  {
+    // La Guajira
     lat: 11.1442, 
     lng: -72.9069, 
-    name: '<div class="font-size-marker-map">Abidas Orozco <br> Contacto: 317 667 5106 <br> La Guajira</div>' 
+    name: '<div class="font-size-marker-map">La Guajira <br><br> SERVIPLUS IT <br> Ing. Abdias Orozco <br> Contacto: +57 317 667 5106 </div>' 
   },
   { 
+    // Magdalena
     lat: 10.2419, 
     lng: -74.5053, 
-    name: '<div class="font-size-marker-map">Abidas Orozco <br> Contacto: 317 667 5106 <br> Magdalena</div>'
+    name: '<div class="font-size-marker-map">Magdalena <br><br> SERVIPLUS IT <br> Ing. Abdias Orozco <br> Contacto: +57 317 667 5106 </div>'
   },
   { 
+    // Cesar
     lat: 9.0349, 
     lng: -73.7500, 
-    name: '<div class="font-size-marker-map">Abidas Orozco <br> Contacto: 317 667 5106 <br> Cesar</div>' 
+    name: '<div class="font-size-marker-map">Cesar <br><br> SERVIPLUS IT <br> Ing. Abdias Orozco <br> Contacto: +57 317 667 5106 </div>' 
   },
-  { 
+  { // Pasto, Nariño
     lat: 1.2078, 
     lng: -78.2772, 
-    name: '<div class="font-size-marker-map">Luis Burbano <br> Contacto:  <br> Nariño</div>' 
-  }
+    name: '<div class="font-size-marker-map">Nariño <br><br> Comercial <br> Ing. Luis Burbano <br> Contacto: +57 316 725 3469 </div>' 
+  },
+  { // Meta
+    lat: 2.9630, 
+    lng: -73.708889, 
+    name: '<div class="font-size-marker-map">Meta <br><br> SMART LIVING INGENIERÍA <br> Ing. Cristian Cuesta <br> Contacto: +57 304 674 9000 </div>' 
+  },
+  { // Santander
+    lat: 6.6666, 
+    lng: -73.45, 
+    name: '<div class="font-size-marker-map">Santander <br><br> BEST LIFE TECHNOLOGY S.A.S <br> Ing. Carlos Plata <br> Contacto: +57 317 4013850 </div> <br> <div class="font-size-marker-map"> SANTAFÉ SOLUCIONES S.A.S. <br>Ing. Carlos Plata <br> Contacto: +57 317 4013850 </div>' 
+  },
+  { // San Andrés – Providencia - Santa Catalina
+    lat: 12.5847, 
+    lng: -81.7005,
+    name: '<div class="font-size-marker-map">San Andrés - Providencia - Santa Catalina <br><br> TECNOSHAP <br> Ing. Favian Racini <br> Contacto: +57 318 376 5426 </div>' 
+  },
+  { // Valle del Cauca
+    lat: 3.9333, 
+    lng: -76.5166, 
+    name: '<div class="font-size-marker-map">Valle del Cauca <br><br> UPPER TECHNOLOGY <br> Ing. Francisco Vásquez <br> Contacto: +57 350 284 3616 </div>' 
+  },
 ];
 
 markers.forEach(function (marker) {
