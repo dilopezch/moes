@@ -61,7 +61,7 @@
   <main>
     <!-- PDF viewer -->
     <section class="pdf-viewer-container">
-      <object id="pdf-viewer-id" class="pdf-viewer" type="application/pdf" data="../assets/docs/moes-catalogue.pdf"  >
+      <object id="pdf-viewer-id" class="pdf-viewer" type="application/pdf" data="../assets/docs/moes-catalogue.pdf">
         <div class="fallback">
           <p>Tu navegador no puede mostrar este archivo PDF.</p>
           <p><a href="../assets/docs/moes-catalogue.pdf" download="moes-catalogue.pdf">Descargar el archivo aquí</a></p>
@@ -160,18 +160,18 @@
   <script src="../js/preloader.js"></script>
 
   <script>
-  // Función para detectar si es móvil
-  function isMobileDevice() {
-    console.log('User Agent:', navigator.userAgent);
-    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  }
-
-  window.addEventListener("DOMContentLoaded", function () {
-    if (isMobileDevice()) {
-      const pdfViewer = document.getElementById("pdf-viewer-id");
-      pdfViewer.removeAttribute("data");
+    function isMobileDevice() {
+      return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
     }
-  });
-</script>
+
+    window.addEventListener("DOMContentLoaded", function () {
+      const pdfViewer = document.getElementById("pdf-viewer-id");
+      if (isMobileDevice()) {
+        // Forzar a Safari/iOS a mostrar el contenido interno
+        pdfViewer.removeAttribute("data");   // Quitar PDF real
+        pdfViewer.setAttribute("type", "text/html"); // Cambiar tipo para que no intente PDF
+      }
+    });
+  </script>
 </body>
 </html>
