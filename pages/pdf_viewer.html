@@ -158,5 +158,20 @@
   <script src="../js/mobile_menu.js"></script>
   <script src="../js/openpdf.js"></script>
   <script src="../js/preloader.js"></script>
+
+  <script>
+  // Función para detectar si es móvil
+  function isMobileDevice() {
+    console.log('User Agent:', navigator.userAgent);
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  }
+
+  window.addEventListener("DOMContentLoaded", function () {
+    if (isMobileDevice()) {
+      const pdfViewer = document.getElementById("pdf-viewer-id");
+      pdfViewer.removeAttribute("data");
+    }
+  });
+</script>
 </body>
 </html>
