@@ -55,7 +55,7 @@ html {
   font-size: 1.5rem;
 }
 
-.contacto-distribuidores p::first-line {
+.contacto-distribuidores p span {
   font-weight: bold;
 }
 
